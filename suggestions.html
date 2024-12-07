@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://vastphotos.com/files/uploads/photos/10520/peaceful-green-forest-m.jpg?v=20230925125943);
+            color: #792929;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #1a73e8;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button.submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button.submit-btn:hover {
+            background-color: #155ab6;
+        }
+
+        .form-group-inline {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-group-inline > div {
+            flex: 1;
+        }
+
+        .form-group label.inline-label {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="air-pollution.html">Air Pollution</a>
+            <a href="water-pollution.html">Water Pollution</a>
+            <a href="soil-pollution.html">Soil Pollution</a>
+            <a href="./suggestions.html">Suggestions</a>
+        </div>
+    <div class="container">
+        <h1>Please Give Your Valuable Suggestions</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="address">H.no/Street Name/City:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+            <div class="form-group-inline">
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" placeholder="Enter your state">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <label class="inline-label">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    Male
+                </label>
+                <label class="inline-label">
+                    <input type="radio" id="female" name="gender" value="Female">
+                    Female
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <select id="occupation" name="occupation">
+                    <option value="School Student">School Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Pollution Type:</label>
+                <label class="inline-label">
+                    <input type="checkbox" id="air" name="pollution" value="Air Pollution">
+                    Air Pollution
+                </label>
+                <label class="inline-label">
+                    <input type="checkbox" id="water" name="pollution" value="Water Pollution">
+                    Water Pollution
+                </label>
+                <label class="inline-label">
+                    <input type="checkbox" id="soil" name="pollution" value="Soil Pollution">
+                    Soil Pollution
+                </label>
+                <label class="inline-label">
+                    <input type="checkbox" id="other" name="pollution" value="Other">
+                    Other
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="measures">Preventive Measures:</label>
+                <textarea id="measures" name="measures" rows="4" placeholder="Enter your suggestions"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Post Your Suggestions</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Pollution Awareness</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #3498db;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: calc(100vh - 150px);
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Content Styles */
+        .content {
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Card Styles for Home Page */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="air-pollution.html">Air Pollution</a>
+        <a href="water-pollution.html">Water Pollution</a>
+        <a href="soil-pollution.html">Soil Pollution</a>
+        <a href="./suggestions.html">Suggestions</a>
+    </div>
+
+    <!-- Content will change for each page -->
+    <div class="container">
+        <!-- This is the Home Page Content -->
+        <div class="header">
+            <h1>Environmental Pollution Awareness</h1>
+            <p>Understanding and Combating Pollution for a Sustainable Future</p>
+        </div>
+
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>To educate and inspire action against environmental pollution through awareness and practical solutions.</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Air Pollution</h3>
+                    <p>Learn about the causes, effects, and solutions to air pollution.</p>
+                </div>
+                <div class="card">
+                    <h3>Water Pollution</h3>
+                    <p>Discover the impact of water contamination and how we can protect our water resources.</p>
+                </div>
+                <div class="card">
+                    <h3>Soil Pollution</h3>
+                    <p>Understand the dangers of soil degradation and contamination.</p>
+                </div>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg" alt="image" >
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Environmental Pollution Awareness. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
